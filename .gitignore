@@ -1,0 +1,7 @@
+*.zip
+*.bin
+*.md.bin
+*.smd
+*.gen
+out/
+__pycache__/
