@@ -146,7 +146,7 @@ short:
 
 ## ⚖️ Credits and legal
 
-Mega Play conversion by **zanac**, based on *The Addams Family ARCADE* v77.0.
+Mega Play conversion by **zanac** (Vanni Brutto), based on *The Addams Family ARCADE* v77.0.
 
 The Addams Family © Acclaim / Flying Edge; the name and characters are
 trademarks of Paramount. Mega Play, its BIOS and Streets of Rage II © Sega.
