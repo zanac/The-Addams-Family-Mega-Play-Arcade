@@ -103,10 +103,10 @@ until the script fills that range in.
    git clone -b mp_addams https://github.com/zanac/mame2003-plus-libretro
    cd mame2003-plus-libretro && make
    ```
-   Or apply [`core/0001-Add-mp_addams-…patch`](core/) to your own tree with
+   Or apply [`core/0001-Add-mp_addams.patch`](core/0001-Add-mp_addams.patch) to your own tree with
    `git am`.
 2. Put `mp_addams.zip` and `megaplay.zip` in the same ROM folder.
-3. Load `mp_addams.zip`. The BIOS runs its usual boot test on the first start,
+3. Load `mp_addams.zip`; it is listed as **The Addams Family - Arcade Edition**. The BIOS runs its usual boot test on the first start,
    then the Mega Play attract screen appears.
 
 **Controls:** Coin (Select) adds a credit · Start begins or continues
