@@ -1,11 +1,13 @@
-From 8d05f520d069f07433b8f7c37bcb2eb3c9a75e68 Mon Sep 17 00:00:00 2001
-From: zanac <zanac4ever@gmail.com>
-Date: Wed, 14 Oct 2026 08:27:23 +0200
-Subject: [PATCH] Add mp_addams (The Addams Family - Arcade Edition, Mega Play)
+From 5a8c5d655abf0b643ce479711cdb21f664f570ba Mon Sep 17 00:00:00 2001
+From: Vanni <zanac4ever@gmail.com>
+Date: Tue, 13 Oct 2026 20:59:32 +0200
+Subject: [PATCH] Add mp_addams (The Addams Family ARCADE, Mega Play)
 
-Homebrew Mega Play conversion of The Addams Family ARCADE.
-Adds the mp_addams set, its DSW C inputs and the megaplay_nvram machine
-(NVRAM handler for the BIOS battery RAM).
+Homebrew Mega Play conversion of The Addams Family ARCADE (v77).
+- INPUT_PORTS mp_addams with DSW C (1UP every, lives)
+- megaplay_nvram: megaplay + NVRAM handler for the BIOS battery RAM
+  (Z80 0x6800-0x77ff: credits, bookkeeping, per-slot game areas)
+- ROM set epr-26013.ic1 (game) / epr-15175-20.ic2 (instruction ROM)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_018jUxoG1TREth88C39ZMWSV
@@ -27,7 +29,7 @@ index b292ae7..61c16c1 100644
  	/* Data East "Burger Time hardware" games */
  	DRIVER( lnc )		/* (c) 1981 */
 diff --git a/src/drivers/segac2.c b/src/drivers/segac2.c
-index acef44e..61e09ea 100644
+index acef44e..cf6f8fa 100644
 --- a/src/drivers/segac2.c
 +++ b/src/drivers/segac2.c
 @@ -4402,6 +4402,27 @@ INPUT_PORTS_START ( mp_mazin )
@@ -107,7 +109,7 @@ index acef44e..61e09ea 100644
  /* 10 */ GAMEB( 1993, mp_gunhe, megaplay, megaplay, megaplay, mp_gunhe, megaplay, ROT0, "Sega",    "Gunstar Heroes", &megaplay_ctrl, NULL )
  /* 11 */ GAMEB( 1993, mp_mazin, megaplay, megaplay, megaplay, mp_mazin, megaplay, ROT0, "Sega",    "Mazin Wars / Mazin Saga", &megaplay_ctrl, NULL )
  /* ?? */ GAMEB( 1993, mp_col3,  megaplay, megaplay, megaplay, megaplay, megaplay, ROT0, "Sega",    "Columns III", &megaplay_ctrl, NULL )
-+/* -- */ GAMEB( 2026, mp_addams, megaplay, megaplay, megaplay_nvram, mp_addams, megaplay, ROT0, "hack", "The Addams Family - Arcade Edition", &megaplay_ctrl, NULL )
++/* -- */ GAMEB( 2026, mp_addams, megaplay, megaplay, megaplay_nvram, mp_addams, megaplay, ROT0, "hack", "The Addams Family ARCADE (Mega Play)", &megaplay_ctrl, NULL )
 -- 
 2.43.0
 

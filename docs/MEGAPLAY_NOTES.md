@@ -48,7 +48,7 @@ Target: **github.com/zanac/mame2003-plus-libretro**, on top of `eb611be`
 ("Backport for mp_gslam and mp_mazin on mega play"). Apply either file:
 
 ```
-git am core/0001-Add-mp_addams.patch
+git am 0001-Add-mp_addams-The-Addams-Family-ARCADE-Mega-Play.patch
 #   or
 git apply mame2003-plus_mp_addams.diff
 make
